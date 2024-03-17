@@ -1,3 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+
+body {
+    font-family: "Manrope", sans-serif;
+    background-color: hsl(218, 23%, 16%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
 .App {
-  text-align: center;
+    text-align: center;
+    background-color: hsl(217, 19%, 24%);
+    padding: 20px;
+    text-align: center;
+    width: 400px;
+    border-radius: 10px;
+    position: relative;
+}
+
+.advice-number {
+    color: hsl(150, 100%, 66%);
+    letter-spacing: 3px;
+}
+
+.advice {
+    color: hsl(193, 38%, 86%);
+    line-height: 26px;
+    font-weight: 800;
+    font-size: 20px;
+}
+
+.advice::before {
+    content: open-quote;
+}
+
+.advice::after {
+    content: close-quote;
+}
+
+.divider-cont {
+    margin: 30px;
+}
+
+.divider {
+    width: 100%;
+}
+
+button {
+    cursor: pointer;
+    background-color: hsl(150, 100%, 66%);
+    border: none;
+    height: 50px;
+    width: 50px;
+    border-radius: 100%;
+    position: absolute;
+    bottom: -25px;
+    right: 44%;
+    transition: box-shadow 0.15s;
+}
+
+button:hover {
+    box-shadow: 0px 0px 10px rgb(168, 255, 212);
+}
+
+.dice {
+    height: 20px;
+}
+
+
+
+@media (max-width: 480px) {
+    .App {
+        width: 250px;
+    }
+
+    button {
+        right: 41%;
+    }
 }
